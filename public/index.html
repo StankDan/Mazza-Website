@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sr-Latn-RS">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F04E23" />
+
+    <!-- Naslov, opis, canonical i JSON-LD postavlja aplikacija (komponenta Seo),
+         da se oznake ne bi duplirale. -->
+    <title>Vrtić Mazza Niš | Privatni vrtić i jasle od 1990.</title>
+
+    <!-- Sajt jos nije spreman za objavu. Kada bude, obrisati ovu liniju i
+         prebaciti ALLOW_INDEXING na true u src/data/site.ts (vidi README). -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/logo-mazza.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Podloga uvodnog ekrana, da nema belog bljeska pre ucitavanja. */
+      html,
+      body {
+        margin: 0;
+        background-color: #fff7f2;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <h1>Predškolska ustanova „Mazza“ - Niš</h1>
+      <p>
+        Prvi privatni porodični vrtić u Nišu, osnovan 1990. godine. Jasle,
+        vrtićke grupe i pripremni predškolski program na tri lokacije.
+      </p>
+      <p>
+        MAZZA 1: Despota Đurđa 65, 018/217-619 · MAZZA 2: Orlovića Pavla 3,
+        018/510-116 · MAZZA 3: Stojana Andrića 33, 018/523-622
+      </p>
+      <p>
+        E-mail: mazza_nis@hotmail.com · Za prikaz celog sajta uključite JavaScript.
+      </p>
+    </noscript>
+    <div id="root"></div>
+
+    <!-- Skrivena kopija upitnika za roditelje (src/components/ParentSurvey.tsx).
+         Po njoj Netlify pri objavljivanju prepoznaje formu i polja - nazivi
+         moraju da se poklapaju sa `name` iz survey.questions u src/i18n/sr.ts. -->
+    <form name="upitnik-za-roditelje" data-netlify="true" hidden>
+      <input type="text" name="uzrast-deteta" />
+      <input type="text" name="objekat" />
+      <input type="text" name="01-zadovoljstvo-radom-vrtica" />
+      <input type="text" name="02-radno-vreme" />
+      <textarea name="02-radno-vreme-obrazlozenje"></textarea>
+      <input type="text" name="03-potrebe-deteta" />
+      <textarea name="03-potrebe-deteta-obrazlozenje"></textarea>
+      <input type="text" name="04-ishrana" />
+      <textarea name="04-ishrana-obrazlozenje"></textarea>
+      <input type="text" name="05-rad-zaposlenih" />
+      <textarea name="05-rad-zaposlenih-obrazlozenje"></textarea>
+      <input type="text" name="06-odnosi-sa-decom-i-roditeljima" />
+      <input type="text" name="07-posebni-programi" />
+      <textarea name="08-predlog-aktivnosti"></textarea>
+      <input type="text" name="09-informisanost" />
+      <textarea name="09-informisanost-obrazlozenje"></textarea>
+      <input type="text" name="10-ucestalost-informacija" />
+      <input type="text" name="11-ukljucenost-roditelja" />
+      <input type="text" name="12-radionice-za-roditelje" />
+      <textarea name="12-radionice-za-roditelje-obrazlozenje"></textarea>
+      <input type="text" name="13-kvaliteti-vrtica" />
+    </form>
+  </body>
+</html>

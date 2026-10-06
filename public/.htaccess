@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # Postojeci fajlovi i folderi se serviraju direktno
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Sve ostale adrese otvara React aplikacija
+  RewriteRule ^ index.html [L]
+</IfModule>

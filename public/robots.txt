@@ -1,0 +1,6 @@
+# Sajt jos nije spreman za objavu, pa je indeksiranje zabranjeno svima.
+# Kada sajt bude spreman, ovaj fajl zameniti sadrzajem iz README-a
+# (odeljak "Sakrivanje sajta od pretrazivaca").
+
+User-agent: *
+Disallow: /

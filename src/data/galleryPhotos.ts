@@ -1,0 +1,41 @@
+// Fotografije za stranicu "Galerija". Ovaj fajl pravi skripta
+// scripts/prepare-gallery.js (npm run galerija) - ne menjati rucno.
+
+import type { Photo } from './photos';
+
+export const GALLERY_PHOTOS: Photo[] = [
+  { src: '/images/galerija/galerija-001.jpg', thumb: '/images/galerija/galerija-001-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-002.jpg', thumb: '/images/galerija/galerija-002-mala.jpg', width: 1507, height: 1800 },
+  { src: '/images/galerija/galerija-003.jpg', thumb: '/images/galerija/galerija-003-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-004.jpg', thumb: '/images/galerija/galerija-004-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-005.jpg', thumb: '/images/galerija/galerija-005-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-006.jpg', thumb: '/images/galerija/galerija-006-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-007.jpg', thumb: '/images/galerija/galerija-007-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-008.jpg', thumb: '/images/galerija/galerija-008-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-009.jpg', thumb: '/images/galerija/galerija-009-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-010.jpg', thumb: '/images/galerija/galerija-010-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-011.jpg', thumb: '/images/galerija/galerija-011-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-012.jpg', thumb: '/images/galerija/galerija-012-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-013.jpg', thumb: '/images/galerija/galerija-013-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-014.jpg', thumb: '/images/galerija/galerija-014-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-015.jpg', thumb: '/images/galerija/galerija-015-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-016.jpg', thumb: '/images/galerija/galerija-016-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-017.jpg', thumb: '/images/galerija/galerija-017-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-018.jpg', thumb: '/images/galerija/galerija-018-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-019.jpg', thumb: '/images/galerija/galerija-019-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-020.jpg', thumb: '/images/galerija/galerija-020-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-021.jpg', thumb: '/images/galerija/galerija-021-mala.jpg', width: 1600, height: 1348 },
+  { src: '/images/galerija/galerija-022.jpg', thumb: '/images/galerija/galerija-022-mala.jpg', width: 1600, height: 739 },
+  { src: '/images/galerija/galerija-023.jpg', thumb: '/images/galerija/galerija-023-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-024.jpg', thumb: '/images/galerija/galerija-024-mala.jpg', width: 1200, height: 1600 },
+  { src: '/images/galerija/galerija-025.jpg', thumb: '/images/galerija/galerija-025-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-026.jpg', thumb: '/images/galerija/galerija-026-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-027.jpg', thumb: '/images/galerija/galerija-027-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-028.jpg', thumb: '/images/galerija/galerija-028-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-029.jpg', thumb: '/images/galerija/galerija-029-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-030.jpg', thumb: '/images/galerija/galerija-030-mala.jpg', width: 1600, height: 1200 },
+  { src: '/images/galerija/galerija-031.jpg', thumb: '/images/galerija/galerija-031-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-032.jpg', thumb: '/images/galerija/galerija-032-mala.jpg', width: 1013, height: 1801 },
+  { src: '/images/galerija/galerija-033.jpg', thumb: '/images/galerija/galerija-033-mala.jpg', width: 1350, height: 1800 },
+  { src: '/images/galerija/galerija-034.jpg', thumb: '/images/galerija/galerija-034-mala.jpg', width: 1600, height: 1200 },
+];

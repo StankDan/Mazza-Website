@@ -1,0 +1,43 @@
+# Podesavanja za Netlify. Vazi i kad se sajt povezuje preko Git-a i kad se
+# salje preko Netlify CLI-ja.
+
+[build]
+  command = "npm run build"
+  # Folder koji se objavljuje - to je ono sto pravi `npm run build`.
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Adresa sajta ulazi u canonical oznake i sitemap.xml.
+  # Dok se testira na *.netlify.app, ovde upisati tu adresu.
+  REACT_APP_SITE_URL = "https://www.vrticmazza.rs"
+
+# Sve adrese otvara React aplikacija (bez ovoga /kontakt vraca 404).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Sajt jos nije spreman za objavu: zabrana indeksiranja za sve pretrazivace.
+# Ovo zaglavlje pokriva i PDF-ove i slike, do kojih meta oznaka ne dopire.
+# Kada sajt bude spreman, obrisati ceo ovaj blok (vidi README).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Fajlovi sa heshom u imenu se mogu kesirati zauvek.
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/dokumenti/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

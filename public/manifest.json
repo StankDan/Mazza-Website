@@ -1,0 +1,12 @@
+{
+  "short_name": "Mazza",
+  "name": "Predškolska ustanova Mazza Niš",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "images/logo-mazza.png", "sizes": "512x157", "type": "image/png" }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#F04E23",
+  "background_color": "#FFF7F2"
+}
